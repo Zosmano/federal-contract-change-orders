@@ -79,9 +79,10 @@ def contracts(d):
     c["fiscal_year"] = (c.contract_date.dt.year - (c.contract_date.dt.month < 4)).astype(int)
     c["year_end_rush"] = c.contract_date.dt.month == 3
     c["option_mentioned"] = c.option_mentioned.fillna(False).astype(bool)
+    c["first_change_days"] = (c.first_amended - c.contract_date).dt.days.clip(lower=0).where(c.amendments > 0)
     return c[["key", "owner_org", "owner_org_title", "vendor_name", "procurement_id", "contract_date", "fiscal_year",
               "contract_period_start", "delivery_date", "duration_days", "v0", "final_value", "growth", "amendments",
-              "slip_days", "option_mentioned", "plausible", "procedure", "commodity", "entity", "bids",
+              "slip_days", "first_change_days", "option_mentioned", "plausible", "procedure", "commodity", "entity", "bids",
               "year_end_rush", "economic_object_code", "description_en", "commodity_code"]].reset_index(drop=True)
 
 

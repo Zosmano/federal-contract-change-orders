@@ -31,3 +31,13 @@ WATCH_MIN_VALUE = 1_000_000      # watch list covers awards of $1M or more
 MIN_ORG_CONTRACTS = 300          # smaller departments are grouped as "Other"
 VALUE_BANDS = [10_000, 25_000, 100_000, 1_000_000, 10_000_000, float("inf")]
 DURATION_BANDS_DAYS = [0, 90, 365, 3 * 365, float("inf")]
+
+# --- Project controls ------------------------------------------------------------------------------
+CONFIDENCE_LEVELS = [50, 80, 90]  # reference-class forecasting: uplift needed to reach P50, P80, P90
+PERT_POINTS = (10, 50, 90)        # optimistic, most likely, pessimistic as percentiles of final ÷ signed value
+MIN_CLASS_SIZE = 100             # reference classes (major contracts, $1M+) need enough history to read their tails
+SIMULATIONS = 10_000              # Monte Carlo runs of the recent $1M+ portfolio
+CONTINGENCY_LEVEL = 80            # contingency reserve set at the P80 of simulated cost growth
+PROB_BANDS = [0, 0.05, 0.10, 0.20, 0.30, 1.0]          # probability-impact matrix, calibrated chance of 25%+ growth
+IMPACT_BANDS = [0, 1e6, 3e6, 10e6, 50e6, float("inf")]   # typical dollars added if it does grow
+SEED = 7

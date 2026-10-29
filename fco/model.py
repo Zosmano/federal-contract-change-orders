@@ -105,4 +105,7 @@ def run(c):
     model = {"intercept": float(lr.intercept_[0]), "coef": {k: float(v) for k, v in coef.items()},
              "levels": levels, "labels": LABELS, "base": base, "median_growth_material": avg_growth,
              "scored_recent": int(len(new)), "expected_material_recent": float(new.risk.sum())}
-    return m, factors, model, watch
+    # Every recent award of $1M+ with its score, for the portfolio contingency simulation.
+    scored = new[new.v0 >= C.WATCH_MIN_VALUE][["key", "contract_date", "owner_org_title", "description_en", "procedure",
+                                              "commodity", "duration_band", "v0", "risk"]]
+    return m, factors, model, watch, scored
