@@ -73,7 +73,7 @@ Explore the analysis in your browser: what drives growth, every department, a li
 [![Live app](https://img.shields.io/badge/Live_app-7A2E44?style=for-the-badge)](https://claude.ai/artifact/4z9ZPCezsJwN5r1m1py6Wy)
 [![Python pipeline](https://img.shields.io/badge/Python_pipeline-B8913A?style=for-the-badge&logo=python&logoColor=white)](#run-it)
 [![9 dashboards](https://img.shields.io/badge/9_dashboards-4A1B2A?style=for-the-badge)](#dashboards)
-[![Project controls](https://img.shields.io/badge/PMP_project_controls-5E2436?style=for-the-badge)](#project-management-analysis)
+[![Project controls](https://img.shields.io/badge/Project_controls-5E2436?style=for-the-badge)](#project-management-analysis)
 
 ## Dashboards
 
