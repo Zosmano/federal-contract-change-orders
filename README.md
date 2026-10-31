@@ -134,6 +134,7 @@ Monte Carlo of the live $1M+ portfolio with its P80 contingency reserve and out-
 - **Watch list:** the 50 highest-risk awards of $1M+ since April 2024, too recent to have an outcome. Suppliers are not named, because the score describes the kind of contract, not the supplier.
 - **Largest increases:** the 40 contracts with the most dollars added.
 - **Method:** how the numbers are built, and their limits.
+- **Story films:** three short animated films in three acts (signed, amended, controlled), with synthesized sound and a narrator: a contract growing from $83.7B to $98.7B, the 1% of contracts that hold 81% of the dollars added, and the risk visible on award day. In the live app they can be saved as video. Panels, figures and bars animate in as each tab opens, unless the viewer's system asks for reduced motion.
 
 ## Run it
 
